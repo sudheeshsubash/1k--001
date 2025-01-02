@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <meta name="description" content="Project Details">
+    <link rel="icon" href="{% static 'path/to/favicon.ico' %}" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-400 to-purple-500 items-center justify-center h-screen">
+    <div class="container mx-auto px-4 py-10">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <img src="{% static 'path/to/project_image.jpg' %}" alt="Project Image" class="w-full h-64 object-cover rounded-lg border-4 border-gray-300">
+            <h1 class="mt-4 text-3xl font-bold text-gray-800">Project Title</h1>
+            <p class="mt-2 text-lg text-gray-600">Project Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <p class="mt-2 text-lg text-gray-600">Start Date: January 1, 2023</p>
+            <p class="mt-2 text-lg text-gray-600">End Date: December 31, 2023</p>
+            <p class="mt-2 text-lg text-gray-600">Status: Ongoing</p>
+            <p class="mt-2 text-lg text-gray-600">Team Members:</p>
+            <ul class="mt-2 text-lg text-gray-600">
+                <li>Member 1</li>
+                <li>Member 2</li>
+                <li>Member 3</li>
+                <!-- Add more team members as needed -->
+            </ul>
+            <button class="mt-6 px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition duration-300">
+                Back to Projects
+            </button>
+        </div>
+    </div>
+</body>
+</html>
